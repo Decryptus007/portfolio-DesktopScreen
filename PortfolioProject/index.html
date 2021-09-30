@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,600;0,800;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="bgBlackId" class="bgBlack">
+        <div class="modal">
+            <h2>!!!Not mobile responsive</h2>
+            <h4>Click the brown area to continue</h4>
+        </div>
+    </div>
+    <section class="hero">
+        <nav>
+            <img class="logo" src="./images/logo.png" alt="Decryptus' Logo">
+            <ul id="navList">
+                <li><a href="#aboutMe">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contactMe">Contact Me</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div class="hero-area">
+            <div class="hero-text">
+                <h1>Decryptus</h1>
+                <p>Front End Developer</p>
+                <div class="button"><a href="#aboutMe">About me</a></div>
+            </div>
+            <div class="socials">
+                <div>
+                   <a href="https://decryptus007.github.io" target="_blank" rel="noopener noreferrer" class="social">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M24 20.682c-.002 1.555-1.17 2.318-2.24 2.318-.903 0-1.76-.544-1.76-1.616 0-1.104 1.201-2.118 2.515-2.118.161 0 .323.015.485.047v-4.312l-6 1.229v5.45c-.002 1.556-1.18 2.32-2.258 2.32-.906 0-1.742-.542-1.742-1.61 0-1.106 1.201-2.125 2.518-2.125.16 0 .322.015.484.047v-6.52l7.998-1.792v8.682zm-13-6.682c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3zm0-1c1.103 0 2-.897 2-2s-.897-2-2-2-2 .897-2 2 .897 2 2 2zm-1.818 2.646c-1.293-.508-2.319-1.534-2.827-2.827l-1.025.128c.6 1.746 1.979 3.125 3.725 3.724l.127-1.025zm-4.869-2.572l-1 .125c.757 2.648 2.84 4.731 5.488 5.488l.125-1c-2.194-.683-3.93-2.418-4.613-4.613zm8.505-6.72c1.293.508 2.319 1.534 2.827 2.828l1.025-.128c-.6-1.746-1.979-3.125-3.725-3.725l-.127 1.025zm-1.771 15.644c.082-.734.378-1.441.878-2.045-.304.03-.613.047-.925.047-4.963 0-9-4.038-9-9s4.037-9 9-9c4.912 0 8.91 3.957 8.992 8.849l1.978-.443c-.311-5.798-5.096-10.406-10.97-10.406-6.075 0-11 4.925-11 11s4.925 11 11 11l.047-.002zm2.151-18.685l-.125 1c2.195.682 3.931 2.418 4.613 4.613l1-.125c-.755-2.648-2.838-4.732-5.488-5.488z"/></svg>
+                   </a> 
+                </div>
+                <div>
+                    <a href="https://react-burger-app-81b55.web.app" target="_blank" rel="noopener noreferrer" class="social">
+                        <img  style="width: 50px; height: 50px; background-color: white; border-radius: 20%;" src="./images/burger.png" alt="rEACTbURGER">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.github.com/decryptus007" target="_blank" rel="noopener noreferrer" class="social">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://wa.me/+2347088435682" target="_blank" rel="noopener noreferrer" class="social">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sub-section" id="aboutMe">
+        <div class="information">
+            <h2>About Me</h2>
+            <p>Hello, My name is Dominic. I am a Front End Developer and Airdrop Hunter.</p>
+        </div>
+        <div class="headshot-container">
+            <img src="./images/headshot.jpg" alt="" class="headshot">
+        </div>
+    </section>
+    <section class="sub-section-alt" id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img class="project-image" src="./images/project1.jpg" alt="ProjectOneImage">
+                <h3>Project One</h3>
+                <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                <hr>
+                <p class="subtext"><a href="https://github.com/decryptus007" target="_blank" rel="noopener noreferrer" class="project-link">View Here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="./images/project2.jpg" alt="ProjectOneImage">
+                <h3>Project Two</h3>
+                <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                <hr>
+                <p class="subtext"><a href="https://github.com/decryptus007" target="_blank" rel="noopener noreferrer" class="project-link">View Here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="./images/project3.png" alt="ProjectOneImage">
+                <h3>Project Three</h3>
+                <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                <hr>
+                <p class="subtext"><a href="https://github.com/decryptus007" target="_blank" rel="noopener noreferrer" class="project-link">View Here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="./images/Project4.jpg" alt="ProjectOneImage">
+                <h3>Project Four</h3>
+                <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                <hr>
+                <p class="subtext"><a href="https://github.com/decryptus007" target="_blank" rel="noopener noreferrer" class="project-link">View Here</a></p>
+            </div>
+        </div>
+    </section>
+    <footer id="contactMe">
+        <h2>Contact me</h2>
+        <p>decryptus080@gmail.com</p>
+    </footer>
+
+    <script src="./src/app.js"></script>
+</body>
+</html>
