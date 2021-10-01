@@ -12,6 +12,7 @@
     <title>ChallengeOne</title>
 </head>
 <body>
+        <h2 style="text-align: center; width: 100%; background-color: aqua; padding: 20px; font-size: xx-large;">The Write-Up; cc: Decryptus</h2>
     <div class="hero-container">
         <nav class="nav">
             <div class="un">
@@ -27,25 +28,38 @@
         </nav>
         <div class="hero">
             <div class="one">
-                <img src="./images/slider1.jpg" alt="slider1">
+                <img id="screen1" class="none active" src="./images/slider1.jpg" alt="slider1">
+                <img id="screen2" class="none" src="./images/slider2.jpg" alt="slider2">
                 <div class="controls">
                     <div class="ctrlIndc">
-                        <div class="indc active"></div>
-                        <div class="indc"></div>
+                        <div id="ind1" class="indc active"></div>
+                        <div id="ind2" class="indc"></div>
                     </div>
                     <div class="ctrlBtn">
-                        <div class="btn"><i class="fas fa-caret-left"></i></div>
-                        <div class="btn"><i class="fas fa-caret-right"></i></div>
+                        <div id="btn1" class="btn"><i class="fas fa-caret-left"></i></div>
+                        <div id="btn2" class="btn"><i class="fas fa-caret-right"></i></div>
                     </div>
                 </div>
             </div>
             <div class="two">
-                <h2>Fashion</h2>
+                <h2 class="header">Fashion</h2>
                 <h1>Elysie Maguire</h1>
-                <h4>it is along established fact that a leader will be distracted by the readable content of a page when looking at its layout</h4>
-                
+                <h4>it is along established fact that a leader will be distracted by the readable content of a page when looking at its layout.</h4>
+                <h2 style="font-weight: normal;">Read more </h2><span><i class="fas fa-caret-right"></i></span>
+                <h4 style="font-weight: bold; font-size: 20px;">subscribe to our newsletter</h4>
+                <div class="form">
+                    <input type="email" placeholder="Enter your email here" id="input">
+                    <h4>Subscribe</h4>
+                </div>
             </div>
         </div>
     </div>
+
+        <h2 style="text-align: center; width: 100%; background-color: aqua; padding: 20px; font-size: xx-large;">The Image; cc: Al-Kindi</h2>
+        <div style="margin: 0 auto;">
+            <img style="width: 900px; height: 500px;" src="./images/demo.jpg" alt="" class="designImg">
+        </div>
+
+    <script src="./src/app.js"></script>
 </body>
 </html>
