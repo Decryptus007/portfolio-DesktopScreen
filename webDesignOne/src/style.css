@@ -1,12 +1,14 @@
 body {
-    width: 1200px;
+    width: 1000px;
     margin: 0;
     padding: 0;
     background-color: #ffc400;
+    flex-direction: column;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
 }
 
 .hero-container {
@@ -61,20 +63,19 @@ nav {
     position: absolute;
     width: 820px;
     height: 400px;
-    background-color: rgba(165, 42, 42, 0.486);
     top: 12%;
     right: 0;
 }
 
 .one {
-    width: 50%;
-    background-color: hotpink;
+    width: 40%;
+    height: 70%;
     display: inline-block;
     padding: 0;
     margin: 0;
 }
 .two {
-    width: 49%;
+    width: 59%;
     padding-left: 5px;
     float: right;
 }
@@ -83,7 +84,43 @@ img {
     width: 100%;
     height: 100%;
     display: block;
-    /* display: none; */
+}
+
+
+img.none {
+    display: none;
+}
+
+img.active {
+    display: block;
+    animation: fadeIn 0.5s ease 0s 1 normal forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+    25% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    75% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    95% {
+        transform: translateX(-5%);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 
 .controls {
@@ -124,13 +161,14 @@ img {
 
 .active {
     background-color: #ffc400;
+    animation: fadeIn 1s ease 0s 1 normal forwards;
 }
 
 .btn {
     font-size: 25px;
 }
 
-.two h2 {
+.two .header {
     padding: 5px;
     margin: 0;
     color: whitesmoke;
@@ -140,9 +178,58 @@ img {
 
 .two h1 {
     font-family: 'Kalam', cursive;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
 }
 
 .two h4 {
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.two h2 {
+    padding: 2px;
+    display: inline-block;
+}
+.two span {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.two .form {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
+    box-shadow: -5px -5px 25px #7976766c, 2px 2px 20px black;
+}
+
+input {
+    height: 45px;
+    width: 250px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+input::placeholder {
+    text-align: center;
+    font-size: x-large;
+}
+
+.form h4 {
+    background-color: #ffc400;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 0;
+    font-weight: bold;
 }
